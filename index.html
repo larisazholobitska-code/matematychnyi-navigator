@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Математичний навігатор — Алгебра 9 клас</title>
+<meta name="description" content="Цифровий ресурс з алгебри для 9 класу. Математичний навігатор. Автор Larisa Zholobitska.">
+<style>
+:root{
+  --bg:#f5f7fb; --card:#fff; --text:#182235; --muted:#667085;
+  --primary:#3157d5; --primary2:#6d4aff; --line:#e6eaf2;
+  --shadow:0 18px 45px rgba(34,45,90,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:var(--bg)}
+a{text-decoration:none;color:inherit}
+.hero{
+  min-height:470px; display:flex; align-items:center; position:relative; overflow:hidden;
+  background:linear-gradient(135deg,#172554 0%,#3157d5 48%,#7148d9 100%); color:white;
+}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.08)}
+.hero:before{width:420px;height:420px;right:-120px;top:-150px}
+.hero:after{width:300px;height:300px;left:-100px;bottom:-160px}
+.wrap{width:min(1120px,92%);margin:auto;position:relative;z-index:1}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
+.logo{font-weight:800;letter-spacing:.3px}
+.badge{padding:9px 14px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.10);font-size:14px}
+.hero-content{padding:55px 0 80px;max-width:820px}
+.kicker{font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.82;font-size:13px}
+h1{font-size:clamp(42px,7vw,76px);line-height:.98;margin:16px 0 20px}
+.hero p{font-size:20px;line-height:1.55;max-width:680px;color:#e8ebff}
+.author{margin-top:26px;font-weight:700}
+main{padding:72px 0}
+.section-head{text-align:center;margin-bottom:42px}
+.section-head h2{font-size:36px;margin:0 0 10px}
+.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.card{
+  background:var(--card); border:1px solid var(--line); border-radius:24px; padding:30px;
+  box-shadow:var(--shadow); transition:.25s transform,.25s box-shadow; position:relative; overflow:hidden;
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 55px rgba(34,45,90,.15)}
+.number{font-size:14px;font-weight:800;color:var(--primary);letter-spacing:.1em}
+.icon{width:58px;height:58px;border-radius:17px;display:grid;place-items:center;background:#eef2ff;font-size:28px;margin:18px 0}
+.card h3{font-size:24px;line-height:1.2;margin:0 0 12px}
+.card p{color:var(--muted);line-height:1.6;min-height:52px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:13px 18px;
+  border-radius:13px;background:var(--primary);color:white;font-weight:750;
+}
+.btn:hover{background:#2647b8}
+.about{
+  margin-top:72px;background:white;border:1px solid var(--line);border-radius:28px;padding:34px;
+  display:grid;grid-template-columns:1.2fr .8fr;gap:30px
+}
+.about h2{margin-top:0}
+.features{display:grid;gap:12px}
+.feature{padding:15px 17px;background:#f7f8fc;border-radius:14px}
+footer{padding:35px 0;background:#111827;color:#cbd5e1;text-align:center}
+footer strong{color:white}
+@media(max-width:760px){
+ .grid,.about{grid-template-columns:1fr}
+ .hero{min-height:430px}.hero-content{padding-top:30px}
+ .card{padding:24px}
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.btn').forEach(function (button) {
+    button.addEventListener('click', function () {
+      // Direct navigation is provided by the link itself.
+      // This handler intentionally does not prevent the default action.
+    });
+  });
+});
+</script>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav">
+      <div class="logo">∑ Математичний навігатор</div>
+      <div class="badge">Алгебра • 9 клас</div>
+    </nav>
+    <div class="hero-content">
+      <div class="kicker">Цифровий освітній ресурс</div>
+      <h1>Математичний<br>навігатор</h1>
+      <p>Інтерактивний простір для вивчення алгебри 9 класу. Обирай тему та переходь до навчальної карти.</p>
+      <div class="author">Автор: Larisa Zholobitska</div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="topics">
+    <div class="section-head">
+      <h2>Навчальні маршрути</h2>
+      <p>Чотири інтерактивні карти — чотири важливі теми курсу алгебри.</p>
+    </div>
+
+    <div class="grid">
+
+
+      <article class="card">
+        <div class="number">01</div>
+        <div class="icon">⚖️</div>
+        <h3>Нерівності</h3>
+        <p>Інтерактивна карта для систематизації знань про нерівності та способи їх розв’язування.</p>
+        <a class="btn" href="https://view.genially.com/6adc817665be6b7ccc2947c3" target="_blank" rel="noopener noreferrer">Відкрити карту →</a>
+      </article>
+
+      <article class="card">
+        <div class="number">02</div>
+        <div class="icon">📈</div>
+        <h3>Квадратична функція</h3>
+        <p>Інтерактивна карта для дослідження квадратичної функції, її властивостей і графіка.</p>
+        <a class="btn" href="https://view.genially.com/6adc8a5011de9612a5c81c25" target="_blank" rel="noopener noreferrer">Відкрити карту →</a>
+      </article>
+
+
+      <article class="card">
+        <div class="number">03</div>
+        <div class="icon">🔢</div>
+        <h3>Числові послідовності</h3>
+        <p>Навігація темами числових послідовностей та основними способами роботи з ними.</p>
+        <a class="btn" href="https://view.genially.com/6adc8d7b11de9612a5cb2032" target="_blank" rel="noopener noreferrer">Відкрити карту →</a>
+      </article>
+
+
+      <article class="card">
+        <div class="number">04</div>
+        <div class="icon">🎲</div>
+        <h3>Основи комбінаторики, теорії ймовірностей та статистики</h3>
+        <p>Інтерактивний маршрут для опрацювання комбінаторики, ймовірностей і статистичних понять.</p>
+        <a class="btn" href="https://view.genially.com/6adc8e938cdc01eea4e53800" target="_blank" rel="noopener noreferrer">Відкрити карту →</a>
+      </article></div>
+  </section>
+
+  <section class="about">
+    <div>
+      <h2>Твій маршрут до знань</h2>
+      <p style="color:#667085;line-height:1.7">
+        «Математичний навігатор» допомагає швидко перейти від назви теми
+        до її інтерактивного навчального простору. Натисни кнопку на потрібній картці,
+        щоб відкрити матеріал Genially у новій вкладці.
+      </p>
+    </div>
+    <div class="features">
+      <div class="feature">✨ Інтерактивне навчання</div>
+      <div class="feature">🧭 Зручна навігація за темами</div>
+      <div class="feature">📚 Алгебра 9 класу</div>
+      <div class="feature">👩‍🏫 Автор: Larisa Zholobitska</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><strong>Математичний навігатор</strong> · Цифровий ресурс з алгебри 9 клас · Larisa Zholobitska</div>
+</footer>
+</body>
+</html>
